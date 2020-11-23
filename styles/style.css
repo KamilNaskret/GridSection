@@ -1,0 +1,329 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #ecf2f8;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .container {
+  max-width: 1440px;
+  width: 80%;
+  height: 50%;
+  min-width: 360px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+      grid-template-areas: "top-left top-left middle right" "bottom-left bottom bottom right";
+}
+
+.wrapper .container div {
+  border-radius: 10px;
+}
+
+.wrapper .container .top-left {
+  background-color: #7541c8;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: top-left;
+  padding: 0 20px;
+}
+
+.wrapper .container .top-left .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.wrapper .container .top-left .profile img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+.wrapper .container .top-left .profile-description {
+  color: white;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+.wrapper .container .top-left .profile-description h2 {
+  margin: 0;
+}
+
+.wrapper .container .top-left .profile-description p {
+  margin: 0;
+  color: white;
+  opacity: 0.5;
+}
+
+.wrapper .container .top-left .first {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.wrapper .container .top-left .second {
+  color: white;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.wrapper .container .middle {
+  background-color: #48556a;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: middle;
+  padding: 0 20px;
+}
+
+.wrapper .container .middle .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.wrapper .container .middle .profile img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+.wrapper .container .middle .profile-description {
+  color: white;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+.wrapper .container .middle .profile-description h2 {
+  margin: 0;
+}
+
+.wrapper .container .middle .profile-description p {
+  margin: 0;
+  color: white;
+  opacity: 0.5;
+}
+
+.wrapper .container .middle .first {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.wrapper .container .middle .second {
+  color: white;
+  opacity: 0.5;
+}
+
+.wrapper .container .right {
+  background-color: white;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: right;
+  padding: 0 20px;
+}
+
+.wrapper .container .right .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.wrapper .container .right .profile img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+.wrapper .container .right .profile-description {
+  color: white;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+.wrapper .container .right .profile-description h2 {
+  margin: 0;
+  color: #48556a;
+}
+
+.wrapper .container .right .profile-description p {
+  margin: 0;
+  color: #48556a;
+  opacity: 0.5;
+}
+
+.wrapper .container .right .first {
+  color: #48556a;
+  font-size: 1.2rem;
+}
+
+.wrapper .container .right .second {
+  color: #19212e;
+  opacity: 0.5;
+}
+
+.wrapper .container .bottom {
+  background-color: black;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bottom;
+  padding: 0 20px;
+}
+
+.wrapper .container .bottom .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.wrapper .container .bottom .profile img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+.wrapper .container .bottom .profile-description {
+  color: white;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+.wrapper .container .bottom .profile-description h2 {
+  margin: 0;
+}
+
+.wrapper .container .bottom .profile-description p {
+  margin: 0;
+  color: white;
+  opacity: 0.5;
+}
+
+.wrapper .container .bottom .first {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.wrapper .container .bottom .second {
+  color: white;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.wrapper .container .bottom-left {
+  background-color: white;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: bottom-left;
+  padding: 0 20px;
+}
+
+.wrapper .container .bottom-left .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.wrapper .container .bottom-left .profile img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+.wrapper .container .bottom-left .profile-description {
+  color: white;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+.wrapper .container .bottom-left .profile-description h2 {
+  margin: 0;
+  color: #48556a;
+}
+
+.wrapper .container .bottom-left .profile-description p {
+  margin: 0;
+  color: #48556a;
+  opacity: 0.5;
+}
+
+.wrapper .container .bottom-left .first {
+  color: #48556a;
+  font-size: 1.2rem;
+}
+
+.wrapper .container .bottom-left .second {
+  color: #19212e;
+  opacity: 0.5;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    margin: 100px auto;
+  }
+  .wrapper .container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "top-left" "top-left" "middle" "bottom-left" "bottom" "right";
+  }
+}
+/*# sourceMappingURL=style.css.map */
